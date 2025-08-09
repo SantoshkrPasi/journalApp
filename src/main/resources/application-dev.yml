@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: journalApp
+  data:
+    mongodb:
+      uri: mongodb+srv://xuosRbFEuKrrWka7:iCSaxLwDPMzPf9om@cluster0.4nmvhdh.mongodb.net/journaldb?retryWrites=true&w=majority&appName=Cluster0
+      database: journaldb
+      auto-index-creation: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: santoshpasi6566@gmail.com
+    password: rsfe uhbr jnjz fure
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  main:
+    allow-circular-references : true
+server:
+  port: 8080
+  servlet:
+    context-path: /journal
+weather:
+  api:
+    key : 28c58896f8ff4971be740600241001
